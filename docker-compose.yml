@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "7444:7444"
+    environment:
+      - PORTKEY_API_KEY=${PORTKEY_API_KEY}
+      - PORTKEY_VIRTUAL_KEY=${PORTKEY_VIRTUAL_KEY}
+    volumes:
+      - ./results:/app/results
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "7445:7445"
+    depends_on:
+      - backend
+    restart: unless-stopped 
