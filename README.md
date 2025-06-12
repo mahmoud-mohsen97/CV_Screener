@@ -2,6 +2,11 @@
 
 A high-performance AI-powered CV screening web application that processes PDF files in zip archives and generates comprehensive Excel reports with intelligent evaluations.
 
+## 🎥 Demo Video
+
+https://github.com/user-attachments/assets/290c8c9d-b4fa-4f2f-977b-1ef9690b2d5f
+
+
 ## ⚡ Features
 
 - **🌐 Full Web Application**: React frontend + FastAPI backend
@@ -17,8 +22,8 @@ A high-performance AI-powered CV screening web application that processes PDF fi
 
 ### Prerequisites
 - Docker & Docker Compose
-- 4GB+ RAM (for AI processing)
-- Internet connection (for AI API calls)
+- OpenAI API key
+- Portkey (for logging and mentoring)
 
 ### Setup & Run
 1. Clone the repository
@@ -98,10 +103,6 @@ docker-compose up -d
 # View logs
 docker-compose logs -f
 ```
-
-## 📝 License
-
-MIT License - feel free to use and modify for your needs.
 
 ## 🤝 Contributing
 
